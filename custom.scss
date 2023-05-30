@@ -1,0 +1,502 @@
+/* 1.-Patrones de color */
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$info: #17a2b7;
+$warning: #fec107;
+$success: #9b9ea3;
+$primary: #2b8a42;
+$secondary: #313a40;
+
+/* 2.-Modificación de variables en bootstrap */
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * 1,
+  4: $spacer * 1.5,
+  5: $spacer * 7.3,
+  6: $spacer * 10,
+);
+
+$position-values: (
+  0: 0,
+  30: 30%,
+  50: 50%,
+  65: 60%,
+  75: 75%,
+  85: 85%,
+  95: 95%,
+  100: 100%,
+);
+
+$enable-shadows:false;
+$enable-gradients:false;
+
+/* 3.-UBICACION DEL LOGO, INICIO Y NAV */
+
+.body {
+  width: auto;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#subir {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #719346;
+  position: fixed;
+  bottom: 30px;
+  display: block;
+  height: 50px;
+  right: 15px;
+  width: auto;
+}
+
+.navbar {
+  background: #313a40;
+  width: auto;
+}
+
+#la_conf:hover, #los_oradores:hover, #el_lyf:hover, #conv_en_orador:hover {
+  color:white;
+}
+
+#link_comp_tickets:hover {
+  color: #93cb3e;
+}
+
+#link_comp_tickets:active {
+  color: #719346;
+}
+
+#la_conf, #los_oradores, #el_lyf, #conv_en_orador {
+  color: #9b9ea3;
+}
+
+#link_comp_tickets {
+  color: #2b8a42;
+}
+
+img.logo {
+  width: 180px;
+  margin-bottom: 10px;
+  padding-left: 2cm;
+}
+
+a.navbar-brand {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  margin-bottom: 20px;
+}
+
+div.navbar-nav {
+  padding-left: 20%;
+}
+
+/* PERSONALIZACION DE LA PARTE PRINCIPAL */
+
+div.cont_flex {
+  padding-top: 5cm;
+  padding-left: 15cm;
+  padding-right: 3cm;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#btn_conv_orador:hover {
+  color: white;
+  background-color:gray;
+}
+
+/* SECCION ORADORES */
+
+#row_cards {
+  display: flex;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+div.cont_flex_oradores {
+  display: flex;
+}
+
+h1.main {
+  font-size: 35px;
+}
+
+p.mainconf {
+  font-size: 18px;
+  padding-left: 2cm;
+}
+
+/* SECCION LUGAR Y FECHA */
+
+section.lugaryfecha {
+  padding-top: 1.5cm;
+}
+
+#row {
+  padding-left: 0cm;
+  margin-right: 1cm;
+}
+
+#honolulu {
+  background-image: url('../assets/img/honolulu.jpg');
+  background-size: 50%;
+}
+
+#col_texto_lyf {
+  display: flex;
+  flex-direction: column;
+
+  }
+
+p.titulolyf {
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 0.4cm;
+}
+
+/* SECCION CONVIERTETE EN ORADOR */
+
+#texto_conv_orador {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3rem;
+}
+
+#form_conv_orador_flex{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#row_conv_orador{
+  display: flex;
+  padding-left: 18rem;
+  padding-right: 19rem;
+}
+
+p.recordatorio {
+  font-size: small;
+}
+
+#enviar {
+  width: 100%;
+  color: white;
+  background-color: #96c93e ;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+/* FOOTER */
+
+#footer {
+  background-size: 100%;
+  background: linear-gradient(to right, #1c3643, #1e5372);
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+#row_footer_flex {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+#preguntasfrec, #contactanos, #prensa, #conferencias, #termycond, #privacidad, #estudiantes {
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* PAGINA DE COMPRA DE TICKETS */
+
+#card_group_compra {
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+#container_estudiante {
+  padding-top: 1rem;
+}
+
+#card_estudiante {
+  border-radius: 0;
+  border-color: #4972a5;
+}
+
+#container_trainee {
+  padding-top: 1rem;
+}
+
+#card_trainee {
+  border-radius: 0;
+  border-color: #90b6ba;
+}
+
+#container_junior {
+  padding-top: 1rem;
+}
+
+#card_junior {
+  border-radius: 0;
+  border-color: #d5be7a;
+}
+
+#col_nombre, #col_cantidad {
+  padding-right: 0.5;
+  padding-left: 0;
+}
+
+#col_apellido, #col_categoria {
+  padding-right: 0;
+  padding-left: 0.5;
+}
+
+#row_resumen_total {
+  padding-top: 2rem;
+}
+
+#resumen_total {
+  background-color: #cce5ff;
+}
+
+#botones {
+  padding-top: 2rem;
+}
+
+#reset {
+  display: inline;
+  width: 100%;
+  background-color: #96c93e;
+}
+
+#col_boton_borrar {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: 0.8rem;
+  margin-left: 0%;
+}
+
+#resumen {
+  display: inline;
+  width: 100%;
+  background-color: #96c93e;
+}
+
+#col_boton_resumen {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: 0%;
+  margin-left: 0.8rem;
+}
+
+/* RESPONSIVE CELULARES */
+
+@media (max-width: 420px) {
+
+  /* NAV Y SECCION PRINCIPAL CELULAR */  
+  
+  #logonav {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+  }
+  
+  #inicio_conf {
+    padding-right: 3rem;
+  }
+  
+  div.cont_flex {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  /* SECCION ORADORES CELULAR */
+  
+  #row_cards {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  #texto_steve, #texto_bill, #texto_ada {
+    font-size:x-large;
+  }
+  
+  /* SECCION LUGAR Y FECHA CELULAR */
+  
+  #row_lyf {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #col_texto_lyf {
+    font-size: 22px;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* SECCION CONVIERTETE EN ORADOR CELULARES */
+  
+  div#row_conv_orador {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  
+  #texto_conv_orador p {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+  }
+  
+  #form_conv_orador_flex{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* SECCION FOOTER CELULARES */
+  
+  div#row_footer_flex {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin:0;
+  }
+  
+  }
+  
+  /* FIN RESPONSIVE CELULARES */
+
+  /* RESPONSIVE TABLETS */
+
+@media (max-width: 992px) {
+
+  /* NAV Y SECCION PRINCIPAL TABLETS */  
+  
+  #logonav {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+  }
+  
+  #inicio_conf {
+    padding-right: 3rem;
+  }
+  
+  div.cont_flex {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  /* SECCION ORADORES TABLETS */
+  
+  #row_cards {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  #texto_steve, #texto_bill, #texto_ada {
+    font-size:x-large;
+  }
+  
+  /* SECCION LUGAR Y FECHA TABLETS */
+  
+  #row_lyf {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #col_texto_lyf {
+    font-size: 22px;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* SECCION CONVIERTETE EN ORADOR TABLETS */
+  
+  div#row_conv_orador {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  
+  #texto_conv_orador p {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+  }
+  
+  #form_conv_orador_flex{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* SECCION FOOTER TABLETS */
+  
+  div#row_footer_flex {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin:0;
+  }
+  
+  }
+  
+  /* FIN RESPONSIVE TABLETS */
+
+@import "../lib/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Descripcion" content="Trabajo integrador">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&family=Roboto:wght@300&family=Scada&display=swap" rel="stylesheet">
+    <script src="./js.js"></script>
+    <title>Comprar Tickets</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- SECCION "NAVBAR" -->
+    <div class="menu">
+      <nav class="navbar position-relative navbar-expand-lg">
+        <div class="container-fluid">
+          <img id="logonav" class="logo postition-absolute" src="./assets/img/codoacodo.png" alt="logo de codo a codo">
+          <a id="inicio_conf" class="navbar-brand text-light ps-50px" href="https://viprototype.github.io/Integrador-22556-Dominguez-Victor/">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-6">
+              <a id="la_conf" class="nav-link" aria-current="page" href="https://viprototype.github.io/Integrador-22556-Dominguez-Victor/">Volver</a>
+              <a id="los_oradores" class="nav-link" href="https://viprototype.github.io/Integrador-22556-Dominguez-Victor/">Los oradores</a>
+              <a id="el_lyf" class="nav-link" href="https://viprototype.github.io/Integrador-22556-Dominguez-Victor/">El lugar y la fecha</a>
+              <a id="conv_en_orador" class="nav-link" href="https://viprototype.github.io/Integrador-22556-Dominguez-Victor/">Conviértete en orador</a>
+              <a id="link_comp_tickets" class="nav-link" href="#">Comprar tickets</a>
+            </div>
+          </div>  
+        </div>     
+      </nav>
+    </div>
+    <!-- SECCION COMPRA -->
+    <div class="container sec_compra mx-4 px-5">
+      <div id="card_group_compra" class="container card_group">
+        <div class="row text-center">
+          <div class="col p-0 m-0">
+            <div id="card_estudiante" class="card">
+              <div id="container_estudiante" class="container">
+                <p>Estudiante</p>
+                <p>Tienen un descuento</p>
+                <p>80%</p>
+                <p>* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+          <div class="col px-2 m-0">
+            <div id="card_trainee" class="card">
+              <div id="container_trainee" class="container">
+                <p>Trainee</p>
+                <p>Tienen un descuento</p>
+                <p>50%</p>
+                <p>* presentar documentación</p>
+              </div>  
+            </div>
+          </div>
+          <div class="col p-0 m-0">
+            <div id="card_junior" class="card">
+              <div id="container_junior" class="container">
+                <p>Junior</p>
+                <p>Tienen un descuento</p>
+                <p>15%</p>
+                <p>* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text_venta text-center pt-2">VENTA</p>
+          <p class="text_valorticket text-center fs-2 fw-semibold">VALOR DE TICKET $200</p>
+          <div class="formulario_datos">
+            <div id="form_nombre_apellido" class="row mt-0 pt-0">
+              <div id="col_nombre" class="col">
+                <input type="text" class="form-control d-flex" placeholder="Nombre" aria-label="Nombre">
+              </div>
+              <div id="col_apellido" class="col">
+                <input type="text" class="form-control d-flex" placeholder="Apellido" aria-label="Apellido">
+              </div>
+              <div class="row pt-3 px-0 mx-0">
+                <input type="email" class="form-control" placeholder="Correo">
+              </div>
+              <div class="row pt-3 pb-0 mb-0 px-0 mx-0">
+                <div class="col px-0 mx-0">
+                  <p>Cantidad</p>
+                </div>
+                <div class="col ps-4">
+                  <p>Categoría</p>
+                </div>
+              </div>
+              <div class="row pt-0 px-0 m-0">
+                <div id="col_cantidad" class="col">
+                  <input id="cantidad" type="number" class="form-control" placeholder="Cantidad" min="1" required>
+                </div>
+                <div id="col_categoria" class="col">
+                  <select id="categoria" class="form-select" aria-label="Seleccione la categoría..">
+                    <option selected>Seleccione la categoría..</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                  </select>
+                </div>
+                <div id="row_resumen_total" class="row px-0 mx-0">
+                  <div id="resumen_total" class="resumen rounded-2 border">
+                    <div id="cantTotal" class="alert" role="alert">Total a Pagar: $ </div>
+                  </div>
+                </div>
+                  <div id="col_boton_borrar" class="col pt-4 text-center container">
+                    <button id="reset" class="btn link-light" type="reset" onclick="clearForm()">Borrar</button>
+                  </div>
+                  <div id="col_boton_resumen" class="col pt-4 text-center container">
+                    <button id="resumen" class="btn link-light" type="button" onclick="calcTotal()">Resumen</button>
+                  </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION "FOOTER" -->
+    <div id="secfooter" class="secfooter">
+      <footer id="footer" class="card-footer mt-3 text-center">
+        <div id="row_footer_flex" class="row w-100">
+          <div class="col">
+            <a id="preguntasfrec" href="#" class="enlace">Preguntas frecuentes</a>
+          </div>
+          <div class="col pt-2">
+            <a id="contactanos" href="#" class="enlace">Contáctanos</a>
+          </div>
+          <div class="col pt-2">
+            <a id="prensa" href="#" class="enlace">Prensa</a>
+          </div>
+          <div class="col pt-2">
+            <a id="conferencias" href="#" class="enlace">Conferencias</a>
+          </div>
+          <div class="col">
+            <a id="termycond" href="#" class="enlace">Términos y condiciones</a>
+          </div>
+          <div class="col pt-2">
+            <a id="privacidad" href="#" class="enlace">Privacidad</a>
+          </div>
+          <div class="col pt-2">
+            <a id="estudiantes" href="#" class="enlace">Estudiantes</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+    
